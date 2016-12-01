@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	img(src="/images/logo.png", height="120", width="120", style="float:left")
+	h4 IIT HYDERABAD GYMKHANA ELECTIONS 2016-17
+	h5 Voter Entries (ODF-REC)
+	br
+	br
+	br
+	//Wrapper
+	#addVoter
+		fieldset
+			input#inputRollNo.input-field(type="text", name="rollno", placeholder="Enter Roll No.")
+			button#btnAddVoter.waves-effect.waves-light.btn SUBMIT
+	br
+	br
+	br
+	div.message Sample Message
+	br
+	div.table
+		h5 Voter List
+		#voterList
+			table
+				thead
+					th Serial No.
+					th Roll No.
+					th Booth
+					th Time
+				tbody
+		
+	// /WRAPPER
+
